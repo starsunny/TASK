@@ -1,0 +1,33 @@
+step 1 -- install docker   
+rhel7.2-- "yum install docker-io"
+ubuntu -- "apt-get install docker-io"
+
+step 2 -- start service of docker
+	"systemctl restart docker"
+
+step 3 -- check docker images 
+	"docker images"
+
+step 4 -- 2 ways to get images
+	1.From dockerhub(online storage of docker images)
+		"docker search ubuntu"
+		"docker pull <name>"
+		"docker load -i <name>"
+		"docker run -it <imagename>
+
+	2.create docker image
+		
+		>>launch any docker image"
+		>>install s/w according to your requirement"
+		"wget http://wordpress.org/latest.tar.gz"
+		"tar -xzvf latest.tar.gz"
+		>>Save it (create account on dockerhub first)"
+		"docker login"
+		>>push it to dockerhub
+		"docker push <repository>/<id
+
+
+or there is one another way too :-
+it used for build own image
+docker commit <existing img> <newname>
+
