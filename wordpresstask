@@ -1,0 +1,29 @@
+>>>docker search ubuntu 15.04
+>>>docker pull ubuntu15.04
+>>>docker run -it ubuntu15.04
+>>>apt-get install curl
+>>>cd /tmp
+>>>curl -O https://wordpress.org/latest.tar.gz
+>>>tar xzfv latest.tar.gz
+>>>touch /tmp/wordpress/.htaccess
+>>>chmod 660 /tmp/wordpress/.htaccess
+
+
+**same time open another terminal and check docker ps
+**copy container id
+**docker login
+username--starsunny
+passwd--************
+
+
+>>>>docker push starsunny/taskwordpress
+
+done
+
+
+>>>>docker search starsunny
+>>>>docker pull starsunny/taskwordpress
+>>>>docker run -i -t starsunny/taskwordpress
+
+
+https://hub.docker.com/r/starsunny/taskwordpress/
